@@ -1,0 +1,183 @@
+
+<!-- Burası comment alanıdır.-->
+
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="name area" content="content area">
+
+    <!-- title of tab-->
+    <title> Title-Main-Burak Gun</title>
+
+    <body>
+        <!-- h1 den h6 ya yazı boyutu kuculur-->
+        <h1> h1 Burak Gun</h1>
+        <h2> h2 Burak Gun</h2>
+        <h3> h3 Burak Gun</h3>
+        <h4> h4 Burak Gun</h4>
+        <h5> h5 Burak Gun</h5>
+        <h6> h6 Burak Gun</h6>
+
+        horizontal line ornegi  <hr/> 
+
+        <p> bu normal yazı boyutu</p>
+        <p> <big> burası buyuk olacak</big> </p>
+        <p> <small> burası ise kucuk olacak </small> </p>
+        <p> paragraph</p>
+
+        <p> substring ornegi -- > H <sub>2</sub> O <sub>4</sub> </p>
+        <p> ust string ornegi -- > 5<sup>4</sup> </p>
+        <p> <B> burası bold olacak</B> </p>
+
+    </body>
+</head>
+
+
+<!-- Bu kısımda Stil ve Renklerle ilgili kısım olacak-->
+<head>
+    <body>
+        <h2 style="color: rgb(6, 255, 6);  background-color: rgb(40, 16, 145);"> Style and Colors</h2>
+        <p  style="color: yellow; background-color: blue;"> style your HTML file </p>
+    </body>
+</head>
+
+<!-- 
+    sitenin düzenli olmasını isteriz. bu yüzden mümkün oldugunca bölümlere ayırmaya calısırız.
+    article içerisinde section lar bunlara ornektir.
+    Aynı sekilde header, main ve footer olarak ayırmamızın sebedi de budur.
+    her kısım içerisinde düzenli olmak ve bölümlere ayırmak okunulabilirlik acısından en iyisidir.
+
+-->
+<head>
+    <body>
+        <header>
+            <nav>
+
+            </nav>
+        </header>
+        
+        <main>
+            <article>
+                <section> 
+                    <h3> header in section 1</h3>
+                </section>
+
+                <section>
+                    <h3> header in section 2</h3>
+                </section>
+
+                <section>
+                    <aside>
+                        <!-- ek bilgi olarak düşünebiliriz. verilen bilgiye ek olarak. bu reklam da olabilir.-->
+                    </aside>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</head>
+
+<!-- Bu kısımda link ile ilgileneceğiz.-->
+<head>
+    <body>
+            <!-- bu referans yazıya tıklayınca web sayfasını acar-->
+            <a href="https://www.google.com" > <h1> Google Home Page </h1> </a>
+
+            <!-- referans sayfasına yeni sekme acarak gider, yani kendi siten hala acık kalır-->
+            <a href="https://www.google.com" target="_blank"> <h1>  Google Home Page  </h1> </a>
+
+            <a href="page2.html"> <h3> Go to Page 2</h3></a>
+
+            <a href="/F:/python/">Python</a> 
+
+            <a href="me.jpg" > <h3> image file</h3> </a>
+    </body>
+</head>
+
+
+
+<!-- resimlerle alakalı -->
+<hr> <h4> Resim Örnekleri</h4> 
+
+<head>
+    <body>
+
+        <!-- eger resim kaldırıldı/silindi/yok ise alt ile ekrana ne gösterileceği ayarlanıyor-->
+        <img width="100" height="100" src="https://avatars.mds.yandex.net/i?id=34a2c33354f7f298d05fe8cc56ef11d2-4720469-images-thumbs&n" alt="Image is not Available" />
+
+        <img src="me.jpg" alt="It is me" >
+
+        <img width="100" height="100" src="me.jpg" alt="It is minimised me" >
+
+        <!-- sadece tek boyut vererek, diğer boyutun da aynı oranda küçülmesini sağlayabilirsin. oransal olarak diğerini de belirler-->
+        <img width="100"  src="me.jpg" alt="It is shrunk me" >
+
+        <!-- resim üzerine tıklandığında seni farklı bir adrese yönlendirir-->
+        <a href= "https://avatars.mds.yandex.net/i?id=34a2c33354f7f298d05fe8cc56ef11d2-4720469-images-thumbs&n" >
+            <h3> Click to see</h3>
+            <img width="100"  src="me.jpg" alt="It is shrunk me" >
+        </a>
+
+    </body>
+</head>
+
+<!-- video ile alakalı -->
+<hr> <h4> Video Örnekleri</h4>
+
+<head>
+    <body>
+
+        <!-- autoplay, loop .. vb. özellikleri de eklenebilir-->
+        <video  src="sample-video.mp4" poster="sample-image.PNG" loop controls height="200" > </video>
+
+        <!-- Youtube Video örneği. youtube paylaş kısmından embed seçeneğinde çıkan kodu direkt olarak buraya yapıştırdık.-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </body>
+</head>
+
+
+<hr> <h4> List Örnekleri</h4>
+
+<head>
+    <body>
+
+        <!--  un-ordered list -->
+        <ul>
+            <li> <a href="@" >  Elma </a>   </li> <!-- href kullanarak list yaptk -->
+            <li>Armut</li>
+            <li>Kavun</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol>
+            <li> <a href="@" >  Elma </a>   </li> <!-- href kullanarak list yaptk -->
+            <li>Armut</li>
+            <li>Kavun</li>
+        </ol>
+
+        <!-- Farklı tipte isimlendirmek için-->
+        <ol type="A">
+            <li> <a href="@" >  Elma </a>   </li> <!-- href kullanarak list yaptk -->
+            <li>Armut</li>
+            <li>Kavun</li>
+        </ol>
+
+        <!-- Nested List Use-->
+        <ol type="A">
+            <li> <a href="@" >  Elma </a>   </li> <!-- href kullanarak list yaptk -->
+            <li> Armut
+                <ol type="a">
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ol>
+            </li>
+            <li>Kavun</li>
+        </ol>
+
+    </body>
+</head>
