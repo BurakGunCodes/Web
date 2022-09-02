@@ -1,0 +1,70 @@
+body{
+    background-color: aqua;
+}
+
+/*bu sekilde bütün h1 olanların özelliğini değiştirir*/
+h1:hover{
+    color: red;
+}
+
+/* classs ile. title adında oluşturduğumuz class ismi*/
+.title {
+    color: blue;
+    font-size: 106px;
+    font-style: italic;
+
+}
+
+/*id ile özellik değiştirme*/
+#title2 {
+    color : white ;
+    background-color: blue;
+}
+
+.list{
+    color : purple ;
+
+}
+
+li{
+    color : orange;
+}
+
+li:last-child{
+    color : red;
+}
+
+
+li:nth-child(2){
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+ h3 {
+    color : red ;
+}
+/*
+#google-link:link{
+    color: yellow;
+}
+
+#google-link:visited{
+    color: red;
+}
+*/
+
+/*
+öcelik sırası
+inline <> içerisinde yazılan özellikler 
+inline > id > class > element 
+
+Selector
+-Element h1 head p .. 
+-Class
+-id
+*/
+
+
+https://www.youtube.com/watch?v=1Rs2ND1ryYc
+51:00
