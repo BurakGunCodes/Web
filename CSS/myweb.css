@@ -1,0 +1,83 @@
+
+body{
+
+   
+    /*
+    background: url(https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+
+    aynı işlevi görüor.kullanım alanına göre değişilik olabilir
+    background-image: ;
+
+    background: url(..//sample-apple.jpg);
+    background: rgb(100,56,55);
+    background: url(https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    */
+
+    /* 
+    body içerisindeki bütün veriye uygulandı
+     capitalize, uppercase, lowercase*/
+    text-transform: capitalize;
+    text-align: justify;
+
+    /*
+    use sans-serif in case you cannot use times
+    maybe it is not available or different browser , font is crashed etc.)
+    font-family: 'Times New Roman', sans-serif;
+
+    eğer ilk font çalışmazsa diğerini kullan. 
+    belkide google font sayfası çöktü.
+    bunun için diğer fontu kullanması gerektiğini söylüyorsun
+    */
+  
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+td{
+    text-align: center;
+}
+
+#intro{
+    color: rgb(219, 168, 29);
+}
+
+.table{
+    color: blueviolet;
+}
+
+#div-image{
+    /*
+    background-repeat : no-repeat;
+    background: url(.//sample-free.jpg);
+    backgorun: rgb(x,y,z);
+    */
+    width:  300px;
+    height: 300px;
+    text-align: center;
+    color: rgb(219, 168, 29);
+    /*
+    background: url(.//sample-free.jpg);
+    */
+    /*linear gradient background
+    to bottom,right,left, bottom right .. 
+
+    birçok renk arasında geçiş yapabiliriz.
+    background: linear-gradient(to right,rgb(3, 125, 246),red,white,green,orange);
+    background: radial-gradient(red,blue,..);
+    
+
+    */ 
+
+    /*Sanırım opaklık için % değerini kullandık.*/
+    background: radial-gradient( red 5% ,blue 50% );
+    background-size: cover;
+}
+
+
+.link{
+    /*none, overline,line-through, underline(default)*/
+    text-decoration: none;
+}
+
+2:49
+

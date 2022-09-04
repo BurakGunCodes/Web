@@ -65,6 +65,27 @@ Selector
 -id
 */
 
+/*
+^ simgesi, bu yol ile başlayan her resmi kontrol eder
+* simgesi, bu yol nerede olursa olsun kontrol eder
+$ simgesi, bu yol ile biten her resmi kontrol eder
+*/
+img[src*="../CSS/"] {
+    border : 5px solid black ;
+}
 
-https://www.youtube.com/watch?v=1Rs2ND1ryYc
+
+/*
+
+selector {
+    property : value1;
+    property2: valu12;
+}
+
+*/
+
+td {
+    text-align: center;
+}
+fhttps://www.youtube.com/watch?v=1Rs2ND1ryYc
 51:00
