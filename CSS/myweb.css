@@ -79,5 +79,26 @@ td{
     text-decoration: none;
 }
 
-2:49
+#apple-image{
+    width : 350; 
+    height: 350px;
+    
+    /*solid dashed double*/
+    border: 2px dashed red ; 
 
+    padding: 5 px;
+
+    float: right;
+}
+
+/*margin padding görmek için arkaplan ayarladım ve köşelerden kaydırdım*/
+.wallpaper{
+    background-color: red;
+    width: 550px;
+    border: 2px solid black;
+    
+    /* top right bottom left*/
+    padding: 10px 20px 40px 100px;
+
+    margin: 30px ;
+}

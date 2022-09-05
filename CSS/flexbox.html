@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./flexbox.css">
+    <title>FlexBox</title>
+
+    <h1 class="header"> FlexBox Example</h1>
+</head>
+<body>
+    <!--shrink: ekran küçültüldüğü zaman verilen orana göre küçült. 0 verilirse küçültülmez. 3,5 vb oranda daha hızlı küçült gibi. -->
+    <!--grow: verilen değer oranında büyütme yap-->
+    <!--basis: ekran küçültüğünde min küçülme değeri belirle-->
+    <div class="container">
+        <div class="container-item" style="order: 1; flex-grow:1;  flex-basis: 50px; flex-shrink: 1;" >A </div>
+        <div class="container-item" style="order: 5; flex-grow:2;  flex-basis: 50px; flex-shrink: 1;" >B </div>
+        <div class="container-item" style="order: 3; flex-grow:1;  flex-basis: 50px; flex-shrink: 1;" >C </div>
+        <div class="container-item" style="order: 2; flex-grow:1;  flex-basis: 50px; flex-shrink: 2;" >D </div>
+        <div class="container-item" style="order: 6; flex-grow:2;  flex-basis: 50px; flex-shrink: 3;" >E </div>   
+        <div class="container-item" style="order: 7; flex-grow:1;  flex-basis: 50px; flex-shrink: 5;" >F </div>
+        <div class="container-item" style="order: 4; flex-grow:1;  flex-basis: 50px; flex-shrink: 6;" >G </div>
+        <div class="container-item" style="order: 9; flex-grow:1;  flex-basis: 50px; flex-shrink: 2;" >H </div>
+        <div class="container-item" style="order: 8; flex-grow:2;  flex-basis: 50px; flex-shrink: 1;" >I </div>   
+    </div>
+</body>
+</html>

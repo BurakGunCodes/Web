@@ -70,7 +70,7 @@ Selector
 * simgesi, bu yol nerede olursa olsun kontrol eder
 $ simgesi, bu yol ile biten her resmi kontrol eder
 */
-img[src*="../CSS/"] {
+img[src*="../CSS/sample-free.jpg"] {
     border : 5px solid black ;
 }
 
@@ -87,5 +87,5 @@ selector {
 td {
     text-align: center;
 }
-fhttps://www.youtube.com/watch?v=1Rs2ND1ryYc
-51:00
+
+

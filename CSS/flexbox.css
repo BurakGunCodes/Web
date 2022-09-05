@@ -1,0 +1,29 @@
+.header{
+    color: blue;;
+}
+
+.container{
+    background-color: blue;
+    margin: 10px;
+    height: 200px;
+
+
+    display: flex;
+    flex-direction: rpw; /*column, row, row-reverse, column-reverse ..*/
+    flex-wrap: wrap; /*wrap, nowrap,  wrap-reverse*/
+
+    justify-content: center;
+    align-items: center;
+}
+.container-item{
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    text-align: center ;
+
+    width:70px;
+    line-height: 70px;
+    margin: 10px;
+
+    
+}
