@@ -13,16 +13,34 @@
     <!--shrink: ekran küçültüldüğü zaman verilen orana göre küçült. 0 verilirse küçültülmez. 3,5 vb oranda daha hızlı küçült gibi. -->
     <!--grow: verilen değer oranında büyütme yap-->
     <!--basis: ekran küçültüğünde min küçülme değeri belirle-->
+    <!--kısa yol olarak -> flex: grow shrink basis-->
     <div class="container">
-        <div class="container-item" style="order: 1; flex-grow:1;  flex-basis: 50px; flex-shrink: 1;" >A </div>
-        <div class="container-item" style="order: 5; flex-grow:2;  flex-basis: 50px; flex-shrink: 1;" >B </div>
-        <div class="container-item" style="order: 3; flex-grow:1;  flex-basis: 50px; flex-shrink: 1;" >C </div>
-        <div class="container-item" style="order: 2; flex-grow:1;  flex-basis: 50px; flex-shrink: 2;" >D </div>
-        <div class="container-item" style="order: 6; flex-grow:2;  flex-basis: 50px; flex-shrink: 3;" >E </div>   
-        <div class="container-item" style="order: 7; flex-grow:1;  flex-basis: 50px; flex-shrink: 5;" >F </div>
-        <div class="container-item" style="order: 4; flex-grow:1;  flex-basis: 50px; flex-shrink: 6;" >G </div>
-        <div class="container-item" style="order: 9; flex-grow:1;  flex-basis: 50px; flex-shrink: 2;" >H </div>
-        <div class="container-item" style="order: 8; flex-grow:2;  flex-basis: 50px; flex-shrink: 1;" >I </div>   
+        <div class="container-item" style="order: 1; flex: 1 1 50px; align-self: flex-start;"                                   >A </div>
+        <div class="container-item" style="order: 5; flex-grow:2;  flex-basis: 50px; flex-shrink: 1; align-self: flex-start;"   >B </div>
+        <div class="container-item" style="order: 3; flex-grow:1;  flex-basis: 50px; flex-shrink: 1; align-self: flex-end;"     >C </div>
+        <div class="container-item" style="order: 2; flex-grow:1;  flex-basis: 50px; flex-shrink: 2; align-self: center;"       >D </div>
+        <div class="container-item" style="order: 6; flex-grow:2;  flex-basis: 50px; flex-shrink: 3; align-self: ;"             >E </div>   
+        <div class="container-item" style="order: 7; flex-grow:1;  flex-basis: 50px; flex-shrink: 5; align-self: flex-start;"   >F </div>
+        <div class="container-item" style="order: 4; flex-grow:1;  flex-basis: 50px; flex-shrink: 6; align-self: ;"             >G </div>
+        <div class="container-item" style="order: 9; flex-grow:1;  flex-basis: 50px; flex-shrink: 2; align-self: flex-end;"     >H </div>
+        <div class="container-item" style="order: 8; flex-grow:2;  flex-basis: 50px; flex-shrink: 1; align-self:stretch ;"      >I </div>   
+    </div>
+
+
+    <br>
+
+    <div    class="grid-container">
+        <div class="grid-item" >1</div>
+        <div class="grid-item" >2</div>
+        <div class="grid-item" >3</div>
+        <div class="grid-item" >4</div>
+        <div class="grid-item" >5</div>
+        <div class="grid-item" >6</div>
+
+       
+
+
     </div>
 </body>
 </html>
+4:13
