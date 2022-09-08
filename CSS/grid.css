@@ -1,23 +1,3 @@
-.grid-container{
-    background-color: green;
-    margin: 30px 10px;
-    height: 300px;
-
-    display: grid;
-
-}
-
-.grid-item{
-    background-color: rgb(137, 201, 8);
-    color: white;
-    font-size: 25px;
-    text-align: center;
-
-    width: 100px;
-    line-height: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
 
 .wrapper{
     display: grid;
@@ -61,6 +41,106 @@
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-.box .index1{
-    background-color: brown;
+
+.grid-container{
+    background-color: green;
+    margin: 30px 10px;
+    height: 300px;
+
+    display: grid;
+
+}
+
+.grid-item{
+    background-color: rgb(137, 201, 8);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 100px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.about-us{
+    background: rgb(237, 80, 80);
+    height: 300px;
+}
+
+.submit-button{
+    display: grid;
+    background-color: rgb(123, 195, 7);
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    padding: 10px 25px;
+    border: 2px solid black;
+    margin-top: 10px ;
+    margin-left: 20px;
+    
+    /*transition: all X s ease etc.*/
+   /*
+       transition: background 1500ms linear;
+    transition: padding 1000ms linear;
+   */
+
+}
+
+
+.submit-button:hover{
+    color: black;
+    background: linear-gradient(to right,rgb(3, 125, 246),red,white,green,orange);
+    padding: 20px 50px;
+
+  /*
+  background: linear-gradient(to right,rgb(3, 125, 246),red,white,green,orange);
+  */  
+    
+}
+
+.animate{
+    display: grid;
+    color: white;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    background: blue;
+    text-align: center;
+   
+ 
+  
+    animation-name: black2red;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; /*sayı verebilirsin*/
+    animation-direction: alternate;
+
+
+    /*
+    animation: name duration timing delay count direction;
+    animation: black2red 2s linear 1s infinite alternate;
+   
+    animation: black2red 2s linear 1s infinite alternate;
+   
+    */
+
+
+}
+
+
+
+
+@keyframes black2red{
+
+    from{
+        background: black ;
+        transform: translate(0px, 0px);
+    }
+    to{
+        background: red;
+        transform: translate(20px, 20px);
+    }
 }
