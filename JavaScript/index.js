@@ -106,3 +106,5 @@
 
         const burak = new Employee('burak','eng');
         console.log(burak.describe());
+
+        
