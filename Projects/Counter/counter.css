@@ -1,4 +1,4 @@
-#main-block{
+#main-block {
     background: lightsalmon;
     grid-template-columns: 1fr;
     display: grid;
@@ -9,7 +9,7 @@
     font-size: 45px;
 }
 
-.buttons{
+.buttons {
     background: lightgrey;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -17,40 +17,45 @@
     padding: 10px;
 
     font-size: 30px;
-    
+
 }
 
-.start{
+.start {
     background-color: lightblue;
     border: 1px solid black;
 
     margin: 10px;
 }
 
-.stop{
+.stop {
     background-color: lightpink;
     border: 1px solid black;
 
-    margin : 10px;
+    margin: 10px;
 }
 
-.reset{
+.reset {
     background-color: rgb(175, 201, 218);
     border: 1px solid black;
 
     margin: 10px;
 }
 
-.set{
+.set {
     background-color: lightslategray;
     border: 1px solid black;
 
-    margin: 10px;   
+    margin: 10px;
 }
 
 
 
-.start:hover, .stop:hover, .reset:hover, .set:hover{
+.start:hover,
+.stop:hover,
+.reset:hover,
+.set:hover {
     border: 1px solid white;
     background: red;
 }
+
+
