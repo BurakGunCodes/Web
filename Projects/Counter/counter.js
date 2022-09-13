@@ -16,6 +16,7 @@ let reset = document.querySelector(".reset");
 let set = document.querySelector(".set");
 
 function stopCounter() {
+    counterState = 0 ;
     clearInterval(interval);
 }
 
@@ -77,16 +78,16 @@ function decreaseCounter() {
 
     timeElapsedSec--;
     // set fonksiyonunda bu değerlerden daha büyük değer girilmesi durumunda 0 olarak atayacak
-    if (timeElapsedSec < 0) {
+    if (timeElapsedSec < 0 || timeElapsedSec >= 60) {
         timeElapsedSec = 59;
         timeElapsedMin--;
     }
 
-    if (timeElapsedMin < 0) {
+    if (timeElapsedMin < 0 || timeElapsedMin >=60) {
         timeElapsedMin = 59;
         timeElapsedHour--;
     }
-    if (timeElapsedHour < 0) {
+    if (timeElapsedHour < 0 || timeElapsedHour >=24) {
         timeElapsedHour = 23;
     }
 
@@ -99,6 +100,8 @@ start.addEventListener("click", () => {
 
     if (counterState == 0) {
         startCounter();
+    }else{
+        alert("Timer is in use already");
     }
 });
 
@@ -113,7 +116,11 @@ reset.addEventListener("click", () => {
     counterState = 0;
 });
 
+
 set.addEventListener("click", () => {
+
+    stopCounter();
+
     var name = window.prompt("Enter Value");
     const timeArray = name.split(":");
 
@@ -121,6 +128,21 @@ set.addEventListener("click", () => {
     timeElapsedMin = timeArray[1];
     timeElapsedHour = timeArray[0];
 
+        // set fonksiyonunda bu değerlerden daha büyük değer girilmesi durumunda 0 olarak atayacak
+        if (timeElapsedSec < 0 || timeElapsedSec >= 60) {
+            timeElapsedSec = 59;
+            timeElapsedMin--;
+        }
+    
+        if (timeElapsedMin < 0 || timeElapsedMin >=60) {
+            timeElapsedMin = 59;
+            timeElapsedHour--;
+        }
+        if (timeElapsedHour < 0 || timeElapsedHour >=24) {
+            timeElapsedHour = 23;
+        }
+
+        
     showTime();
 
 
