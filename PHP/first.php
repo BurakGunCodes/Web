@@ -7,6 +7,8 @@
     <title>PHP Example</title>
 </head>
 <body>
+    <!--
+
     <?php
     $name = "jo" ;
     $age = 06;
@@ -19,12 +21,32 @@
     $myFloat = 90.5;
     $myBool = TRUE;
     echo "$myString $myInt $myFloat $myBool";
+    echo "<br>" ;
+    echo strtolower($myString);
+    echo "<br>" ;
+    echo strtoupper($myString);
+    echo "<br>" ;
+    echo "length :" ; 
+    echo strlen($myString) ;
 
     ?>
+
+-->
+
+    <form action="first.php" method="get">
+        Name : <input type="text" name="user_name">
+        Age : <input type="text" name="user_age">
+        <input type="submit">
+    </form>
+
+    <?php echo $_GET["user_name"] ?> 
+    <br>
+    <?php echo $_GET["user_age"] ?> 
 
 </body>
 </html>
 
 <!-- 
     video link : https://www.youtube.com/watch?v=OK_JCtrrv-c
+    1:15:00
 -->
