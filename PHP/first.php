@@ -33,20 +33,46 @@
 
 -->
 
+<!--
     <form action="first.php" method="get">
         Name : <input type="text" name="user_name">
-        Age : <input type="text" name="user_age">
+        Age : <input type="number" name="user_age">
         <input type="submit">
     </form>
 
     <?php echo $_GET["user_name"] ?> 
     <br>
     <?php echo $_GET["user_age"] ?> 
+-->
+    
+    <hr>
+    
 
+    <form action="first.php" method="POST" >
+        Name: <input type="text" name="userName" >
+      Password : <input type="password" name="password" >
+        <input type="submit">
+    </form>
+
+   
+     <?php echo $_POST["userName"]  ?>
+     <br>
+     <?php  echo $_POST["password"]  ?>
+
+     <?php
+     $friends = array("burak", "murat", "onur");
+     echo $friends[0];
+
+     $friends[5]="haci";
+     echo $friends[5];
+     echo count($friends);
+     ?>
+
+ 
 </body>
 </html>
 
 <!-- 
     video link : https://www.youtube.com/watch?v=OK_JCtrrv-c
-    1:15:00
+    1:50:00
 -->
