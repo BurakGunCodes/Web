@@ -47,7 +47,7 @@
     
     <hr>
     
-
+<!--
     <form action="first.php" method="POST" >
         Name: <input type="text" name="userName" >
       Password : <input type="password" name="password" >
@@ -63,16 +63,71 @@
      $friends = array("burak", "murat", "onur");
      echo $friends[0];
 
-     $friends[5]="haci";
-     echo $friends[5];
-     echo count($friends);
+    $friends[5]="haci";
+    echo $friends[5];
+    echo " length: " ;
+    echo count($friends);
      ?>
+-->
+    <!--
+    Checkbox
+    -->
+    <form action="first.php" method="POST">
+    Elma: <input type="checkbox" name="secenekler[]" value="elma"><br>
+    Armut: <input type="checkbox" name="secenekler[]" value="armut"><br>
+    Muz: <input type="checkbox" name="secenekler[]" value="muz"><br>
+    <input type="submit">
+    </form>
 
- 
+    <?php
+    $meyveler = $_POST["secenekler"];
+    if( $meyveler != NULL){
+        foreach($meyveler as $x){
+            echo $x . " - ";
+        }
+    }
+
+    ?>
+    <!--
+    Associative Array
+    -->
+    <?php  
+    echo "<hr><br>";
+    $grades = array("Burak"=>"B+", "Murat"=>"A+", "Onur"=>"A+");
+    $grades["Burak"]  = "C+";
+    echo $grades["Burak"] . " ";
+
+    //İlişkisel bir bağlantı yaptım. num-isim, isim-sehir. 
+    // sonuc olarak numara ile sehir bilgisine ulaşılabilir.
+    $number = array("264470"=>"burakgun","264471"=>"muratgun", "264472"=>"onurgun");
+    // coklu ayni deger girişlerinde son girilen işleme alınır. yani burakgun-ankara
+    $Addr = array("burakgun"=>"sakarya", "burakgun"=>"sivas", "burakgun"=>"ankara", "muratgun"=>"istanbul", "onurgun"=>"samsun");
+
+    echo $Addr[ $number["264470"] ] . " ";
+
+    ?>
+
+<!--
+    Functions
+-->
+    <?php
+        echo "<hr><br>";
+
+        function sayHi($name){
+            echo "Merhaba $name Kardeş <br>";
+        }
+
+        sayHi("Burak");
+
+    ?>
+
+
+
+
 </body>
 </html>
 
 <!-- 
     video link : https://www.youtube.com/watch?v=OK_JCtrrv-c
-    1:50:00
+    2:47:00
 -->
