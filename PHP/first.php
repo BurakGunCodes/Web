@@ -122,12 +122,50 @@
     ?>
 
 
+<!--
+    Form
+-->
+        <form action="first.php" method="POST">
+            N1: <input id="number1" type="number" name="N1"><br><br>
+            N2: <input id="number2" type="number" name="N2"><br><br>
+            OP: <input type="text" name="Op"><br><br>
+            Out : <div id="result" style="display: inline-block; 
+                            width: 150px; 
+                            height: 20px; 
+                            background: lightslategray;"><br><br>
 
+            </div>
+            <input  style="background: lightpink;" 
+                    type="submit" 
+                    name="submitButton"><br><br>
+
+        </form>
+
+
+        <?php
+            $Num1 = $_POST["N1"]; 
+            $Num2 = $_POST["N2"]; 
+            $Op = $_POST["Op"];           
+        ?>
+
+    <?php
+        echo $_SERVER['PHP_SELF'];
+        echo "<br>";
+        echo $_SERVER['SERVER_NAME'];
+        echo "<br>";
+        echo $_SERVER['HTTP_HOST'];
+        echo "<br>";
+        echo $_SERVER['HTTP_REFERER'];
+        echo "<br>";
+        echo $_SERVER['HTTP_USER_AGENT'];
+        echo "<br>";
+        echo $_SERVER['SCRIPT_NAME'];
+    ?>
 
 </body>
 </html>
 
 <!-- 
-    video link : https://www.youtube.com/watch?v=OK_JCtrrv-c
+    video link : https://www.youtube.com/watch?v=OK_JCtrrv-c&t=h1m47s0
     2:47:00
 -->
